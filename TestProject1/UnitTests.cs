@@ -92,7 +92,7 @@ namespace LightControlSystem.Tests
         {
             var strip = new LEDStrip("1", "LED Strip");
 
-            Assert.AreEqual("Белый", strip.GetStatus().Contains("Белый") ? "Белый" : null);
+            Assert.AreEqual("#FFFFFF", strip.GetStatus().Contains("#FFFFFF") ? "#FFFFFF" : null);
         }
 
         /// <summary>
@@ -217,7 +217,7 @@ namespace LightControlSystem.Tests
         public void SetColor_WithInvalidHexColors_ShouldReject()
         {
             var strip = new LEDStrip("1", "LED Strip");
-            var originalColor = "Белый";
+            var originalColor = "#FFFFFF";
             var invalidColors = new string[]
             {
                 "#ZZZZZ",       // неправильные символы

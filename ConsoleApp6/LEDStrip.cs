@@ -10,7 +10,7 @@ namespace LightControlSystem
 
         public LEDStrip(string id, string name) : base(id, name)
         {
-            Color = "Белый";
+            Color = "#FFFFFF";
         }
 
         public void SetColor(string hexColor)

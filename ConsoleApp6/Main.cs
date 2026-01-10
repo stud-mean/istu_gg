@@ -201,14 +201,14 @@ namespace LightControlSystem
             var input = Console.ReadLine();
             string color = input switch
             {
-                "1" => "Красный",
-                "2" => "Зеленый",
-                "3" => "Синий",
-                "4" => "Фиолетовый",
-                "5" => "Голубой",
-                "6" => "Желтый",
-                "7" => "Белый",
-                _ => input.StartsWith("#") && input.Length == 7 ? input : "Белый"
+                "1" => "#FF0000",
+                "2" => "#00FF00",
+                "3" => "#0000FF",
+                "4" => "#FF00FF",
+                "5" => "#00FFFF",
+                "6" => "#FFFF00",
+                "7" => "#FFFFFF",
+                _ => input.StartsWith("#") && input.Length == 7 ? input : "#FFFFFF"
             };
 
             ledStrip.SetColor(color);
