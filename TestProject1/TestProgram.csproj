@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ConsoleApp6\ConsoleApp6.csproj" />
+    <ProjectReference Include="..\ConsoleApp6\MainProgram.csproj" />
   </ItemGroup>
 
   <ItemGroup>
